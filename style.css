@@ -1,0 +1,118 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+}
+
+/* Import Inter-VariableFont */
+@font-face {
+    font-family: 'Inter';
+    src: url('assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('woff');
+}
+
+.wrapper {
+    background-color: hsl(0, 0%, 8%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: hsl(0, 0%, 12%);
+    width: 70%;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container picture img {
+    width: 4.5em;
+    height: 4.5em;
+    border-radius: 50%;
+}
+
+.wrapper .container h2 {
+    color: hsl(0, 0%, 100%);
+}
+
+.wrapper .container h5 {
+    color: hsl(75, 94%, 57%);
+    margin-top: -10px;
+    font-size: 12px;
+}
+
+.wrapper .container p {
+    color: hsl(0, 0%, 100%);
+    font-size: 11px;
+}
+
+.wrapper .container .btn {
+    background-color: hsl(0, 0%, 20%);
+    width: 20em;
+    max-width: 100%;
+    border-radius: 5px;
+    border: none;
+    margin: 6px;
+    padding: 0.8rem 1.5rem;
+    color: hsl(0, 0%, 100%);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.wrapper .container .btn:hover,
+.wrapper .container .btn:active {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 12%);
+}
+
+.wrapper .attribution {
+    font-size: 9px; 
+    text-align: center;
+    color: #fff;
+    margin: 10px;
+}
+
+.wrapper .attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+
+@media (min-width: 1024px) {
+    .container {
+        width: 20.5vw;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 539px) {
+    .container {
+        width: 47vw;
+    }
+}
+
+@media (min-width: 540px) and (max-width: 679px) {
+    .container {
+        width: 37vw;
+    }
+}
+
+@media (min-width: 680px) and (max-width: 800px) {
+    .container {
+        width: 33vw;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1023px) {
+    .container {
+        width: 28vw;
+    }
+}
